@@ -55,12 +55,13 @@ body {
 
 .right .copy {
     color: #000;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .right .copy p {
-    margin: 1.5rem 0;
+    /* margin: 1.5rem 0; */
     font-size: 0.875rem;
+    margin: 0 0 1rem 0;
 }
 
 .right form {

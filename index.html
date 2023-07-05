@@ -24,7 +24,7 @@
   </head>
 
   <body class="p-0 m-0">
-    <div class="split-screen row ">
+    <div class="split-screen row">
       <div class="left col">
         <!-- <section class="copy">
           <h1>Explore your creativity</h1>
@@ -36,56 +36,54 @@
       </div>
 
       <div class="container right">
-        <form action="">
+        <div class="sub-container">
+          <div class="logo">
+            <img src="/assets/Green-Black-Logo.svg" alt="">
+          </div>
           <section class="copy">
-            <h2 class="mt-4">Register</h2>
-            <div class="login-container">
-              <p>
-                Already have account ? <a href=""><strong>Log In</strong></a>
-              </p>
+            <h2 class="mt-2">Register</h2>
+            <small>Welcome to Portal, please put your details below to start using the portal</small>
+          </section>
+          <form action="">
+            <div class="input-container name">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" />
             </div>
-          </section>
+            <div class="input-container email">
+              <label for="email">Email ID</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="input-container password">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+              <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </div>
+            <div class="input-container repeat-password">
+              <label for="repeat-password">Repeat Password</label>
+              <input
+                type="password"
+                name="repeat-password"
+                id="repeat-password"
+              />
+            </div>
 
-          <div class="input-container name">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username"/>
-          </div>
-          <div class="input-container email">
-            <label for="email">E - Mail</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <div class="input-container password">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
-            <i class="fa fa-eye-slash" aria-hidden="true"></i>
-          </div>
-          <div class="input-container repeat-password">
-            <label for="repeat-password">Repeat Password</label>
-            <input type="password" name="repeat-password" id="repeat-password" />
-          </div>
+            <div class="input-container cta">
+              <label for="tnc" class="checkbox-container">
+                <input type="checkbox" class="mx-2" name="tnc" id="tnc" />
+                <span class="checkmark"></span>
+                I agree to the <a href="">Terms & Conditions</a>
+              </label>
+            </div>
 
-          <div class="input-container cta">
-            <label for="tnc" class="checkbox-container">
-              <input type="checkbox" class="mx-2" name="tnc" id="tnc"/>
-              <span class="checkmark"></span>
-              I agree to the Terms & Conditions
-            </label>
-          </div>
+            <button class="register" type="submit">Register</button>
 
-          <button class="register" type="submit">
-            Register
-          </button>
-
-          <section class="copy legal">
-            <p>
-              <span class="small"
-                >By Continuing, You agree to accept our <br />
-                <a href=""> Terms of Service </a>&amp;
-                <a href="">Privacy Policy</a>.</span
-              >
-            </p>
-          </section>
-        </form>
+            <section class="legal text-center">
+              <small>
+                Already an User? <a href="">Login Here</a>
+              </small>
+            </section>
+          </form>
+        </div>
       </div>
     </div>
     <script

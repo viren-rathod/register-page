@@ -3,6 +3,10 @@
   line-height: 1.5;
   --primary-blue: #233975;
 }
+
+:focus {
+  outline: none;
+}
 body {
   font-weight: 500;
   font-family: "Montserrat";
@@ -71,16 +75,6 @@ a:hover {
   font-weight: 400;
 }
 
-/* .right .copy {
-    color: #000;
-    text-align: center; 
-} 
- .right .copy p {
-    margin: 1.5rem 0; 
-    font-size: 0.875rem;
-    margin: 0 0 1rem 0;
-} */
-
 .right form {
   width: 80%;
   margin-top: 1.5rem;
@@ -89,22 +83,53 @@ a:hover {
 form input[type="text"],
 form input[type="email"],
 form input[type="password"] {
-  display: block;
+  font: 16px/24px "Montserrat", sans-serif;
+  color: #333;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 8px;
-  border: 1px solid #c4c4c4;
-  padding: 1em;
-  margin-bottom: 1.25rem;
-  font-size: 0.875rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+::placeholder {
+    font-weight: 400 !important;
+    font-size: 14px;
+}
+
+.col3 {
+  float: left;
+  width: 27.33%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.effect {
+  border: 0;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  position: relative;
+  background: transparent;
+}
+.effect ~ .focus-bg {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 54%;
+  background-color: #ededed;
+  transition: 0.3s;
+  z-index: -1;
+}
+.effect:focus ~ .focus-bg {
+  transition: 0.3s;
+  width: 100%;
 }
 
 label {
-  display: block;
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
+  width: fit-content;
 }
 .input-container.password {
   position: relative;
@@ -123,7 +148,6 @@ label {
   height: 0;
 }
 .checkbox-container {
-  display: block;
   position: relative;
   padding-left: 2rem;
   user-select: none;

@@ -25,46 +25,73 @@
 
   <body class="p-0 m-0">
     <div class="split-screen row">
-      <div class="left col">
-        <!-- <section class="copy">
-          <h1>Explore your creativity</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-            aspernatur.
-          </p>
-        </section> -->
-      </div>
+      <div class="left col"></div>
 
       <div class="container right">
         <div class="sub-container">
           <div class="logo">
-            <img src="/assets/Green-Black-Logo.svg" alt="">
+            <img src="/assets/Green-Black-Logo.svg" alt="" />
           </div>
           <section class="copy">
             <h2 class="mt-2">Register</h2>
-            <small>Welcome to Portal, please put your details below to start using the portal</small>
+            <small
+              >Welcome to Portal, please put your details below to start using
+              the portal</small
+            >
           </section>
           <form action="">
             <div class="input-container name">
-              <label for="username">Username</label>
-              <input type="text" name="username" id="username" />
+              <div class="col3 w-100">
+                <label for="username">User Name</label>
+                <input
+                  id="username"
+                  class="effect w-100"
+                  type="text"
+                  placeholder="Username"
+                />
+                <span class="focus-bg"></span>
+              </div>
             </div>
+
             <div class="input-container email">
-              <label for="email">Email ID</label>
-              <input type="text" name="email" id="email" />
+              <div class="col3 w-100">
+                <label for="email">Email ID</label>
+                <input
+                  id="email"
+                  class="effect w-100"
+                  type="text"
+                  placeholder="Email ID"
+                />
+                <span class="focus-bg"></span>
+              </div>
             </div>
+
             <div class="input-container password">
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
-              <i class="fa fa-eye-slash" aria-hidden="true"></i>
+              <div class="col3 w-100">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  name="password"
+                  class="effect w-100"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span class="focus-bg"></span>
+              </div>
             </div>
+
             <div class="input-container repeat-password">
-              <label for="repeat-password">Repeat Password</label>
-              <input
-                type="password"
-                name="repeat-password"
-                id="repeat-password"
-              />
+              <div class="col3 w-100">
+                <label for="repeat-password">Repeat Password</label>
+                <input
+                  type="password"
+                  name="repeat-password"
+                  id="repeat-password"
+                  class="effect w-100"
+                  placeholder="Repeat Password"
+                />
+                <span class="focus-bg"></span>
+              </div>
             </div>
 
             <div class="input-container cta">
@@ -78,9 +105,7 @@
             <button class="register" type="submit">Register</button>
 
             <section class="legal text-center">
-              <small>
-                Already an User? <a href="">Login Here</a>
-              </small>
+              <small> Already an User? <a href="">Login Here</a> </small>
             </section>
           </form>
         </div>

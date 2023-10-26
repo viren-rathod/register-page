@@ -4,7 +4,8 @@ This is a simple registration page created using HTML, CSS, and Bootstrap 5. It'
 
 ## Preview
 
-![Screenshot from 2023-10-26 13-45-33](https://github.com/viren-rathod/register-page/assets/127713305/2c50b580-c262-49a9-a0fe-8c99dfdca449)
+![Preview](https://github.com/viren-rathod/register-page/assets/127713305/7fe07455-6b64-4a7a-bc51-ca2294fd4668)
+
 
 ## Features
 
